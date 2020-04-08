@@ -1,0 +1,77 @@
+.glitter{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 1rem;
+	margin-left: 0.5rem;
+}
+.gcol{
+	display: flex;
+	flex-direction: column;
+	margin-right: 1rem;
+}
+.glitter-star1 {
+	font-size: 30px;
+	margin-bottom: 60px;
+	animation: glitter 2s linear 0s infinite normal;
+    -webkit-animation: glitter 2s linear 0s infinite normal;
+    -moz-animation: glitter 2s linear 0s infinite normal;
+    -ms-animation: glitter 2s linear 0s infinite normal;
+    -o-animation: glitter 2s linear 0s infinite normal;
+  }
+  .glitter-star2 {
+	font-size: 26px;  
+    animation: glitter 2s linear 0s infinite normal;
+    -webkit-animation: glitter 2s linear 0s infinite normal;
+    -moz-animation: glitter 2s linear 0s infinite normal;
+    -ms-animation: glitter 2s linear 0s infinite normal;
+    -o-animation: glitter 2s linear 0s infinite normal;
+  }
+  .glitter-star3 {
+	font-size: 40px;
+    animation: glitter 2s linear 0s infinite normal;
+    -webkit-animation: glitter 2s linear 0s infinite normal;
+    -moz-animation: glitter 2s linear 0s infinite normal;
+    -ms-animation: glitter 2s linear 0s infinite normal;
+    -o-animation: glitter 2s linear 0s infinite normal;
+  }
+  
+  @keyframes glitter {
+    0% {
+      -webkit-transform: scale(1.0);
+      opacity: 1;
+    }
+    25% {
+      -webkit-transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(1.0);
+      opacity: 1;
+    }
+    75% {
+      -webkit-transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 1;
+    }
+  }
+
+  .four-point-star::after,
+.four-point-star::before {
+    position: absolute;
+	content: "\2726";
+}
+
+.four-point-star::after { /* The foreground star */
+    background: linear-gradient(135deg, rgb(255, 226, 99) 20%, rgb(251, 216, 56) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.four-point-star::before { /* The star shadow */
+    color: transparent;
+    text-shadow: 2px 3px 10px rgb(255, 231, 122);
+}
