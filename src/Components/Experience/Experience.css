@@ -1,0 +1,8 @@
+#i{
+    font-size: 70px;
+    margin-right:3vw;
+}
+.row{
+    display: flex;
+    align-items: center;
+}

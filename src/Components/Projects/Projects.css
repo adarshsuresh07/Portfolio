@@ -1,0 +1,53 @@
+#ip1{
+    font-size: 70px;
+    margin-right:3vw;
+    animation: turnon 2s ease 0s infinite normal;
+    -webkit-animation: turnon 2s ease 0s infinite normal;
+    -moz-animation: turnon 2s ease 0s infinite normal;
+    -ms-animation: turnon 2s ease 0s infinite normal;
+    -o-animation: turnon 2s ease 0s infinite normal;
+}
+#ip2{
+    font-size: 70px;
+    margin-right:3vw;
+    animation: turnon 2s linear 0s infinite normal;
+    -webkit-animation: turnon 2s linear 0s infinite normal;
+    -moz-animation: turnon 2s linear 0s infinite normal;
+    -ms-animation: turnon 2s linear 0s infinite normal;
+    -o-animation: turnon 2s linear 0s infinite normal;
+}
+#ip3{
+    font-size: 70px;
+    margin-right:3vw;
+    animation: turnon 2s ease-in 0s infinite normal;
+    -webkit-animation: turnon 2s ease-in 0s infinite normal;
+    -moz-animation: turnon 2s ease-in 0s infinite normal;
+    -ms-animation: turnon 2s ease-in 0s infinite normal;
+    -o-animation: turnon 2s ease-in 0s infinite normal;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes turnon {
+    0% {
+      color:black;
+    }
+    25% {
+        color:#fd7e14;
+      opacity: 0.5;
+    }  
+    50% {
+        color:#fd7e14;
+      opacity: 1;
+    }
+    75% {
+        color:#fd7e14;
+      opacity: 0.5;
+    }
+    100% {
+        color:black;
+        opacity: 1;
+    }
+  }

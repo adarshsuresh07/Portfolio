@@ -5,8 +5,9 @@ import Question from '../Question/Question'
 import Profile from '../Profile/Profile'
 import Glitter from '../Glitter/Glitter'
 import Cards from '../Card/Card'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import Education from '../Education/Education'
+import Experience from '../Experience/Experience'
+import Projects from '../Projects/Projects'
 class Home extends React.Component {
     render() {
         return (
@@ -20,44 +21,26 @@ class Home extends React.Component {
                 <div className="col2">
                     <fieldset id="box1" className="main">
                         <legend>Who am I?</legend>
+                        <div className="row">
                         <Question />
                         <span>
                             Given the current situation, kindly note that we are experiencing some delays from employers in their recruitment plans. Nonetheless, we are carrying on with the process as we are very hopeful that the situation will change in the coming weeks. Should you be interested in this vacancy, we encourage you to apply above.
                         </span>
+                        </div>
                     </fieldset>
-                    <div className="row">
+                    <div className="row1">
                         <div className="col3">
                             <fieldset id="box3">
                                 <legend>Education</legend>
-                                <div className="row">
-                                    <span id="i"><FontAwesomeIcon icon={faGraduationCap} /></span>
-                                <div>
-                                    <h4>B.tech (2017-21)</h4>
-                                    <span>College of Engineering Trivandrum</span>
-                                </div>
-                                </div>
-                                <div className="row">
-                                    <span id="i"><FontAwesomeIcon icon={faGraduationCap} /></span>
-                                <div>
-                                    <h4>Higher Secondary (2014-16)</h4>
-                                    <span>Govt. Higher Secondary School, Konni</span>
-                                </div>
-                                </div>
-                                <div className="row">
-                                    <span id="i"><FontAwesomeIcon icon={faGraduationCap} /></span>
-                                <div>
-                                    <h4>SSLC (2014)</h4>
-                                    <span>RVHSS, Konni</span>
-                                </div>
-                                </div>
+                               <Education/>
                             </fieldset>
                             <fieldset id="box2">
                                 <legend>Experience</legend>
-                                <Cards />
+                                <Experience/>
                             </fieldset>
-                            <fieldset id="box1">
+                            <fieldset id="box4">
                                 <legend>Projects</legend>
-                                <Cards />
+                                <Projects/>
                             </fieldset>
                         </div>
                         <div className="col4">

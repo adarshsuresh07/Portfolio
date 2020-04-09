@@ -12,7 +12,7 @@
 }
 .col1 fieldset{
     width:90%;
-    margin:3vh;
+    margin:5%;
     border-radius: 1rem;
     -webkit-box-shadow: 6px 6px 14px rgba(0,0,0,0.3);
     box-shadow: 6px 6px 14px rgba(0,0,0,0.3);
@@ -25,30 +25,37 @@
     -webkit-box-shadow: 6px 6px 14px rgba(0,0,0,0.3);
     box-shadow: 6px 6px 14px rgba(0,0,0,0.3);
     padding: 0.5rem;
+    transition: 500ms;
 }
 
 .col2 fieldset:hover{
+    transition: 500ms;
+
     padding:1rem;
     -webkit-box-shadow: 6px 6px 14px rgba(0,0,0,0.5);
     box-shadow: 6px 6px 14px rgba(0,0,0,0.5);
 } 
 #box1{
     border: 2px solid #03adfc;
-    display: flex;
-    align-items: center;
 }
 #box2{
     border: 2px solid #fc3103;
-    display: flex;
-    align-items: center;
+    
 }
 #box3{
     border: 2px solid #1dcf17;
-    display: flex;
-    flex-direction: column;
 }
+#box4{
+    border: 2px solid #fd7e14;
+}
+
 .row{
     display: flex;
+    align-items: center;
+}
+.row1{
+    display: flex;
+    align-items: center;
 }
 .col3{
     width:42vw;
@@ -62,5 +69,25 @@
     margin-right:3vw;
 }
 
+@media only screen and (max-width: 600px) {
+    .home{
+        flex-direction: column;
+    }
+    .col1{
+        width:100%;
+    }
+    .col2{
+        width:100%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .col3{
+        width:100%;
+    }
+    .col4{
+        width:100%;
+    }
 
+}
   
