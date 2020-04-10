@@ -33,8 +33,10 @@ class Profile extends React.Component {
     render() {
         return (
             <div className="prohome">
-                <img id="proimg" src={require("../../Assets/Images/proimg.jpg")} onClick={this.rotate}>
+                <div id="proimg">
+                <img src={require("../../Assets/Images/proimg.jpg")} onClick={this.rotate}>
                 </img>
+                </div>
                 {this.state.type?
                 <div className="text">
                     <Typist speed={20} onFinishedTyping={this.showmore} >

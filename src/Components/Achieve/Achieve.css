@@ -2,11 +2,7 @@
     font-size: 70px;
     margin-right:3vw;
 }
-.rowe{
-    cursor: pointer;
+.row{
     display: flex;
     align-items: center;
-}
-.edu img{
-    width:90%;
 }

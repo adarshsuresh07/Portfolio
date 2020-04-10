@@ -104,6 +104,13 @@
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+  .sm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
    
   .spread:hover .suitclubs {
     left: 60px;

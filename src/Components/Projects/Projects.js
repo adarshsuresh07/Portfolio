@@ -2,7 +2,6 @@ import React from 'react'
 import './Projects.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb} from "@fortawesome/free-solid-svg-icons";
-import { wait } from '@testing-library/react';
 class Education extends React.Component {
     constructor(props) {
         super(props);

@@ -1,0 +1,22 @@
+.modal{
+    position: fixed;
+    top:2.5vh;
+    left:15vw;
+    width:70vw;
+    background-color: rgba(0,0,0,0.3);
+    z-index:99999; 
+}
+.modal img{
+    width:65vw;
+    margin:0 2.5vw 2.5vw 2.5vw;
+}
+.close{
+    width:70vw;
+    display: flex;
+    justify-content: flex-end;
+}
+#im{
+    color: white;
+    margin-top:0.5rem;
+    margin-right:0.5rem;
+}

@@ -2,7 +2,12 @@
     font-family: 'Acme', sans-serif;
 }
 #proimg{
-    margin: 20px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#proimg img{
+    margin-top: 20px;
     width: 60%;
     border-radius: 50%;
     cursor: pointer;

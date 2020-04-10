@@ -8,10 +8,25 @@ import Cards from '../Card/Card'
 import Education from '../Education/Education'
 import Experience from '../Experience/Experience'
 import Projects from '../Projects/Projects'
+import Achieve from '../Achieve/Achieve'
+import Modal from '../Modal/Modal'
 class Home extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+            modalon:false,
+            imagesrc:''
+        }
+    }
+    modalclick=src=>{
+        this.setState({imagesrc:src});
+        this.setState({modalon:!this.state.modalon});
+    }
+
     render() {
         return (
             <div className="home">
+                {this.state.modalon?<Modal img={this.state.imagesrc} modal={this.modalclick}/>:null}
                 <div className="col1">
                     <fieldset>
                         <legend>Profile</legend>
@@ -32,13 +47,13 @@ class Home extends React.Component {
                         <div className="col3">
                             <fieldset id="box3">
                                 <legend>Education</legend>
-                               <Education/>
+                               <Education modal={this.modalclick}/>
                             </fieldset>
-                            <fieldset id="box2">
+                            <fieldset id="box1">
                                 <legend>Experience</legend>
                                 <Experience/>
                             </fieldset>
-                            <fieldset id="box4">
+                            <fieldset id="box2">
                                 <legend>Projects</legend>
                                 <Projects/>
                             </fieldset>
@@ -56,15 +71,24 @@ class Home extends React.Component {
                                 </ul>
                                 </div>
                             </fieldset>
-                            <fieldset id="box2">
+                            <fieldset id="box3">
                                 <legend>Participaton & Achievements</legend>
-                                <Cards />
+                                <Achieve />
                             </fieldset>
                             <fieldset id="box1">
                                 <legend>Hobbies</legend>
+                                <div className="row">
                                 <Football />
+                                <ul>
+                                    <li>Football, Cricket</li>
+                                    <li>Front end development</li>
+                                    <li>Memes</li>
+                                    <li>Social Work</li>
+                                    <li>Webseries, Anime</li>
+                                </ul>
+                                </div>
                             </fieldset>
-                            <fieldset id="box3">
+                            <fieldset id="box2">
                                 <legend>Social Media</legend>
                                 <Cards />
                             </fieldset>

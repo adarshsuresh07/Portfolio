@@ -55,7 +55,6 @@
 }
 .row1{
     display: flex;
-    align-items: center;
 }
 .col3{
     width:42vw;
@@ -74,7 +73,7 @@
         flex-direction: column;
     }
     .col1{
-        width:100%;
+        width:100vw;
     }
     .col2{
         width:100%;
@@ -87,6 +86,12 @@
     }
     .col4{
         width:100%;
+    }
+    .col1 fieldset{
+        max-width:80%;
+        margin:5%;
+        padding-left: 0.6rem;
+        padding-bottom: 20px;
     }
 
 }
