@@ -22,10 +22,17 @@ class Home extends React.Component {
         this.setState({imagesrc:src});
         this.setState({modalon:!this.state.modalon});
     }
+    close=e=>{
+        e.preventDefault();
+        if(this.state.modalon){
+        this.setState({imagesrc:''});
+        this.setState({modalon: false});
+        }   
+    }
 
     render() {
         return (
-            <div className="home">
+            <div className="home" onClick={e=>this.close(e)} onContextMenu={e=>e.preventDefault()}>
                 {this.state.modalon?<Modal img={this.state.imagesrc} modal={this.modalclick}/>:null}
                 <div className="col1">
                     <fieldset>
