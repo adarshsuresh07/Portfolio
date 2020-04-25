@@ -23,7 +23,6 @@ class Home extends React.Component {
         this.setState({modalon:!this.state.modalon});
     }
     close=e=>{
-        e.preventDefault();
         if(this.state.modalon){
         this.setState({imagesrc:''});
         this.setState({modalon: false});
@@ -46,7 +45,7 @@ class Home extends React.Component {
                         <div className="row">
                         <Question />
                         <span>
-                            Given the current situation, kindly note that we are experiencing some delays from employers in their recruitment plans. Nonetheless, we are carrying on with the process as we are very hopeful that the situation will change in the coming weeks. Should you be interested in this vacancy, we encourage you to apply above.
+                        A B-tech student who can offer a good software engineer in the near future.
                         </span>
                         </div>
                     </fieldset>
@@ -58,7 +57,7 @@ class Home extends React.Component {
                             </fieldset>
                             <fieldset id="box1">
                                 <legend>Experience</legend>
-                                <Experience/>
+                                <Experience modal={this.modalclick}/>
                             </fieldset>
                             <fieldset id="box2">
                                 <legend>Projects</legend>
@@ -78,10 +77,10 @@ class Home extends React.Component {
                                 </ul>
                                 </div>
                             </fieldset>
-                            <fieldset id="box3">
+                            {/* <fieldset id="box3">
                                 <legend>Participaton & Achievements</legend>
                                 <Achieve />
-                            </fieldset>
+                            </fieldset> */}
                             <fieldset id="box1">
                                 <legend>Hobbies</legend>
                                 <div className="row">
@@ -96,7 +95,7 @@ class Home extends React.Component {
                                 </div>
                             </fieldset>
                             <fieldset id="box2">
-                                <legend>Social Media</legend>
+                                <legend>Let's Connect more</legend>
                                 <Cards />
                             </fieldset>
                         </div>

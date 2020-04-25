@@ -47,7 +47,7 @@ class Profile extends React.Component {
                         {/* <Typist.Reset /> */}
                         </Typist>
                     {this.state.address?
-                    <Typist speed={10} >
+                    <Typist speed={5} >
                     Vasthupam <br/>
                     Mangaram <br/>
                     Konni PO <br/>

@@ -2,9 +2,13 @@ import React from 'react'
 import './Experience.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPuzzlePiece} from "@fortawesome/free-solid-svg-icons";
+import pden from '../../Assets/Images/pden.jpg'
 class Education extends React.Component {
     constructor(props) {
         super(props);
+    }
+    call=()=>{
+        this.props.modal(pden);
     }
     render() {
         return (
@@ -12,22 +16,22 @@ class Education extends React.Component {
             <div className="row">
                 <span id="i"><FontAwesomeIcon icon={faPuzzlePiece} /></span>
                 <div>
-                    <h4>B.tech (2017-21)</h4>
-                    <span>College of Engineering Trivandrum</span>
+                    <h4>Delopus</h4>
+                    <span>Front-end Developer</span>
+                </div>
+            </div>
+            <div className="row"  onClick={this.call}>
+                <span id="i"><FontAwesomeIcon icon={faPuzzlePiece}/></span>
+                <div>
+                    <h4>Pden (Blockstack apps)</h4>
+                    <span>Internship as a Reactjs developer</span>
                 </div>
             </div>
             <div className="row">
                 <span id="i"><FontAwesomeIcon icon={faPuzzlePiece} /></span>
                 <div>
-                    <h4>Higher Secondary (2014-16)</h4>
-                    <span>Govt. Higher Secondary School, Konni</span>
-                </div>
-            </div>
-            <div className="row">
-                <span id="i"><FontAwesomeIcon icon={faPuzzlePiece} /></span>
-                <div>
-                    <h4>SSLC (2014)</h4>
-                    <span>RVHSS, Konni</span>
+                    <h4>Keltron</h4>
+                    <span>Internship related to ML</span>
                 </div>
             </div>
             </div>
