@@ -241,8 +241,17 @@
       -ms-transition: top 0.3s ease, left 0.3s ease;
       transition: top 0.3s ease, left 0.3s ease;
     }
-    
+    .spread .suittwitter {
+      -webkit-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+     
     .spread .suitdiamonds {
+      left: 25px;
+      top: 0px;
       -webkit-transform: rotate(-10deg);
       -moz-transform: rotate(-10deg);
       -o-transform: rotate(-10deg);
@@ -251,8 +260,8 @@
     }
      
     .spread .suithearts {
-      left: 30px;
-      top: 0px;
+      left: 50px;
+      top: 5px;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -260,8 +269,8 @@
       transform: rotate(0deg);
     }
     .spread .suitclubs {
-      left: 60px;
-      top: 5px;
+      left: 75px;
+      top: 10px;    
       -webkit-transform: rotate(10deg);
       -moz-transform: rotate(10deg);
       -o-transform: rotate(10deg);
@@ -270,8 +279,8 @@
     }
      
     .spread .suitspades{
-      left: 80px;
-      top: 10px;
+      left: 100px;
+      top: 15px;
       -webkit-transform: rotate(20deg);
       -moz-transform: rotate(20deg);
       -o-transform: rotate(20deg);
