@@ -34,6 +34,10 @@
     content: " ";
     color: #33cc00;
   }
+  .suitstwitter:before, .suitstwitter:after {
+    content: " ";
+    color: #33cc00;
+  }
   div[class*='suit']:before {
     position: absolute;
     font-size: 15px;
@@ -87,7 +91,17 @@
     transition: top 0.3s ease, left 0.3s ease;
   }
   
+  .spread:hover .suittwitter {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+   
   .spread:hover .suitdiamonds {
+    left: 25px;
+    top: 0px;
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
@@ -96,8 +110,8 @@
   }
    
   .spread:hover .suithearts {
-    left: 30px;
-    top: 0px;
+    left: 50px;
+    top: 5px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -113,8 +127,8 @@
   }
    
   .spread:hover .suitclubs {
-    left: 60px;
-    top: 5px;
+    left: 75px;
+    top: 10px;    
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -o-transform: rotate(10deg);
@@ -123,8 +137,8 @@
   }
    
   .spread:hover .suitspades{
-    left: 80px;
-    top: 10px;
+    left: 100px;
+    top: 15px;
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
     -o-transform: rotate(20deg);
