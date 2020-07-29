@@ -51,11 +51,6 @@ class Profile extends React.Component {
             this.setState({ address: true });
         }
     }
-    typeAddress = () => {
-        const txt = "Vasthupam <br> Mangaram <br> Konni PO <br> Pathanamthitta <br> Kerala, India <br> Pin:689691";
-        if (document.getElementById("address"))
-            document.getElementById("address").innerHTML = txt;
-    }
     render() {
         return (
             <div className="prohome">
@@ -69,9 +64,12 @@ class Profile extends React.Component {
                         <span id="name"></span>
                         {this.state.address ?
                             <div>
-                                <p id="address">
-                                </p>
-                                {this.typeAddress()}
+                                Vasthupam  <br />
+                                Mangaram <br />
+                                 Konni PO <br />
+                                 Pathanamthitta <br />
+                                  Kerala, India <br />
+                                   Pin:689691
                                 <div>
                                     <i>Contact me:</i> <br />
                                     <a href="tel: +919207676309">+91 9207676309</a> <br />

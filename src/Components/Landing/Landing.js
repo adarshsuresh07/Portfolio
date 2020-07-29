@@ -44,7 +44,9 @@ class Home extends React.Component {
             setTimeout(() => {
                 document.getElementById("dark").className = "bright-mode"
             }, 500);
-            this.setState({ mode: false });
+            setTimeout(() => {
+                this.setState({ mode: false });
+            }, 1000);
         }
         else {
             setTimeout(() => {
@@ -53,7 +55,9 @@ class Home extends React.Component {
             setTimeout(() => {
                 document.getElementById("dark").className = "dark-mode"
             }, 500);
-            this.setState({ mode: true });
+            setTimeout(() => {
+                this.setState({ mode: true });
+            }, 1000);
         }
     }
 
