@@ -44,7 +44,7 @@
 }
 
 #more a {
-  color: #fd7e14;
+  color: #f8b500;
   text-decoration: none;
 }
 
@@ -53,15 +53,15 @@
     color: black;
   }
   25% {
-    color: #fd7e14;
+    color: #f8b500;
     opacity: 0.5;
   }
   50% {
-    color: #fd7e14;
+    color: #f8b500;
     opacity: 1;
   }
   75% {
-    color: #fd7e14;
+    color: #f8b500;
     opacity: 0.5;
   }
   100% {
