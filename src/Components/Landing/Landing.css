@@ -21,28 +21,53 @@
 }
 
 .home::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Track */
 
 .home::-webkit-scrollbar-track {
     background: white;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Handle */
 
 .home::-webkit-scrollbar-thumb {
-    background: black;
+    background: rgb(80, 80, 80);
     border-radius: 5px;
 }
 
 /* Handle on hover */
 
 .home::-webkit-scrollbar-thumb:hover {
-    background: blue;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.home-dark-mode::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.home-dark-mode::-webkit-scrollbar-track {
+    background: #212327;
+    border-radius: 3px;
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+
+.home-dark-mode::-webkit-scrollbar-thumb {
+    background: rgb(212, 212, 212);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+
+.home-dark-mode::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .choice {
