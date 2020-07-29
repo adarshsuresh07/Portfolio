@@ -84,7 +84,7 @@ class Home extends React.Component {
                 <div className="col1">
                     <fieldset>
                         <legend>Profile</legend>
-                        <Profile />
+                        <Profile mode={this.state.mode} />
                     </fieldset>
                 </div>
                 <div className="col2">
