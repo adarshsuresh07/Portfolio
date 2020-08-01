@@ -68,6 +68,7 @@
         width: 100vw;
         z-index: 99999;
         height: 100vh;
+        border-radius: 0;
     }
     .modal img {
         width: 90vw;
