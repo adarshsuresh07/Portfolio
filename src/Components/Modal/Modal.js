@@ -13,7 +13,7 @@ class Modal extends React.Component {
             color: "black"
         }
         return (
-            <div className="modal" style={this.props.mode?styleModal:null}>
+            <div className="modal" style={this.props.mode ? styleModal : null}>
                 <div className="close" onClick={this.call}>
                     <span id="im"><FontAwesomeIcon icon={faTimes} /></span>
                 </div>
@@ -31,17 +31,22 @@ class Modal extends React.Component {
                     </div>
                     <div className="modal-right">
                         {this.props.details.cert ?
-                            <embed src={this.props.details.cert} />
+                            <object data={this.props.details.cert} type="application/pdf" >
+                                <p>
+                                    Your web browser doesn't have a PDF plugin. Instead you can
+                                <a href={this.props.details.cert} >click here to download the PDF file.</a>
+                                </p>
+                            </object>
                             : null
                         }
                         <div className="modal-links">
                             {this.props.details.site ?
-                                <a href={this.props.details.site} target="_blank" title="Deployed Link" style={this.props.mode?{color:"black"}:null}>
+                                <a href={this.props.details.site} target="_blank" title="Deployed Link" style={this.props.mode ? { color: "black" } : null}>
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                                 : null} &emsp;
                             {this.props.details.github ?
-                                <a href={this.props.details.github} target="_blank" title="Git repo link" style={this.props.mode?{color:"black"}:null}>
+                                <a href={this.props.details.github} target="_blank" title="Git repo link" style={this.props.mode ? { color: "black" } : null}>
                                     <img src={Github} style={{ width: "3rem" }} alt="git" />
                                 </a>
                                 : null}
