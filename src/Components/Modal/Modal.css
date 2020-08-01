@@ -13,11 +13,10 @@
 
 .modal a {
     color: white;
-    max-width: 80%;
 }
 
 .modal embed {
-    width: 100%;
+    width: 90%;
     height: 50vh;
     object-fit: contain;
     margin: 0 2.5vw 2.5vw 2.5vw;
