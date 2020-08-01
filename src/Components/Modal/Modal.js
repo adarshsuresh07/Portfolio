@@ -31,12 +31,10 @@ class Modal extends React.Component {
                     </div>
                     <div className="modal-right">
                         {this.props.details.cert ?
-                            <object data={this.props.details.cert} type="application/pdf" >
-                                <p>
-                                    Your web browser doesn't have a PDF plugin. Instead you can
-                                <a href={this.props.details.cert} >click here to download the PDF file.</a>
-                                </p>
-                            </object>
+                            <a href={this.props.details.cert} download="cert/ss">
+                                <embed src={this.props.details.cert} >
+                                </embed>
+                            </a>
                             : null
                         }
                         <div className="modal-links">
