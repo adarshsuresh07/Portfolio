@@ -111,16 +111,16 @@
 .col1 fieldset {
     width: 90%;
     margin: 5%;
-    border-radius: 1rem;
-    -webkit-box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
-    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     padding: 0.6rem;
 }
 
 .col2 fieldset {
     max-width: 95%;
     margin: 5vh;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     -webkit-box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
     box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
     padding: 0.5rem 1rem;
