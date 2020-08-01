@@ -63,18 +63,21 @@ class Profile extends React.Component {
                         {this.typing("name")}
                         <span id="name"></span>
                         {this.state.address ?
-                            <div>
-                                Vasthupam  <br />
-                                Mangaram <br />
-                                 Konni PO <br />
-                                 Pathanamthitta <br />
-                                  Kerala, India <br />
+                            <div style={{ marginTop: "1rem" }}>
+                                Vasthupam,
+                                Mangaram,<br />
+                                 Konni PO
+                                 Pathanamthitta, <br />
+                                  Kerala, India
                                    Pin:689691
-                                <div>
+                                <div style={{ marginTop: "1rem" }}>
                                     <i>Contact me:</i> <br />
-                                    <a href="tel: +919207676309">+91 9207676309</a> <br />
-                                    <a href="tel: +919074036526">+91 9074036526</a> <br />
-                                    <a href="mailto:vasthoopham.ky@gmail.com">vasthoopham.ky@gmail.com</a>
+                                    &ensp;<a href="tel: +919207676309">+91 9207676309</a> <br />
+                                    &ensp;<a href="tel: +919074036526">+91 9074036526</a> <br />
+                                    &ensp;<a href="mailto:vasthoopham.ky@gmail.com">vasthoopham.ky@gmail.com</a>
+                                </div>
+                                <div style={{ marginTop: "1rem" }}>
+                                <a href="../../Assets/Images/Resume.pdf" className="resume-download" download="Resume.pdf">Download my Resume</a>
                                 </div>
                             </div> : null}
                     </div> : null}

@@ -16,7 +16,7 @@ class Home extends React.Component {
         super(props);
         this.state = {
             modalon: false,
-            imagesrc: '',
+            details: {},
             mode: false,
             name: 0
         }
@@ -26,13 +26,13 @@ class Home extends React.Component {
         window.addEventListener('keydown', this.setName);
     }
 
-    modalclick = src => {
-        this.setState({ imagesrc: src });
+    modalclick = details => {
+        this.setState({ details });
         this.setState({ modalon: !this.state.modalon });
     }
     close = e => {
         if (this.state.modalon) {
-            this.setState({ imagesrc: '' });
+            this.setState({ details: {} });
             this.setState({ modalon: false });
         }
     }
@@ -74,7 +74,7 @@ class Home extends React.Component {
     render() {
         return (
             <div id="home" className="home" onClick={e => this.close(e)} onContextMenu={e => e.preventDefault()} >
-                {this.state.modalon ? <Modal img={this.state.imagesrc} modal={this.modalclick} /> : null}
+                {this.state.modalon ? <Modal details={this.state.details} modal={this.modalclick} mode={this.state.mode} /> : null}
                 <div id="dark" className="bright-mode"></div>
                 {window.innerWidth < 700 ?
                     <div className="choice" onClick={this.changeMode}>Wanna see my {this.state.mode ? "bright" : "dark"} side? Hit me {this.state.mode ? "again" : ''}!</div>
@@ -101,7 +101,7 @@ class Home extends React.Component {
                         <div className="col3">
                             <fieldset id="box3">
                                 <legend>Education</legend>
-                                <Education modal={this.modalclick} />
+                                <Education />
                             </fieldset>
                             <fieldset id="box1">
                                 <legend>Experience</legend>
@@ -109,7 +109,7 @@ class Home extends React.Component {
                             </fieldset>
                             <fieldset id="box2">
                                 <legend>Projects</legend>
-                                <Projects />
+                                <Projects modal={this.modalclick} />
                             </fieldset>
                         </div>
                         <div className="col4">

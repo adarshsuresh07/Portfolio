@@ -1,42 +1,100 @@
-.modal{
+.modal {
     position: fixed;
-    top:2.5vh;
-    left:15vw;
-    width:70vw;
-    background-color: rgba(0,0,0,0.3);
-    z-index:99999; 
+    top: 8vh;
+    left: 15vw;
+    width: 70vw;
+    height: 80vh;
+    background-color: #212327;
+    color: rgb(212, 212, 212);
+    border-radius: 0.5rem;
+    z-index: 99999;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3), -2px -2px 2px rgba(0, 0, 0, 0.3);
 }
-.modal img{
-    width:65vw;
-    margin:0 2.5vw 2.5vw 2.5vw;
+
+.modal a {
+    color: white;
 }
-.close{
-    width:70vw;
+
+.modal embed {
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+    margin: 0 2.5vw 2.5vw 2.5vw;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), -4px -4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modal-links {
+    display: flex;
+    align-items: center;
+}
+
+.modal-left {
+    width: 45%;
+    height: 100%;
+    padding: 0 1rem;
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+.modal-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close {
+    width: 70vw;
     display: flex;
     justify-content: flex-end;
 }
-#im{
-    color: white;
-    margin-top:0.5rem;
-    margin-right:0.5rem;
+
+#im {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
     cursor: pointer;
 }
+
+.modal-row {
+    display: flex;
+    align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
-    .modal{
+    .modal {
         position: fixed;
-        top:10vh;
-        left:0;
-        width:100vw;
-        background-color: rgba(0,0,0,0.3);
-        z-index:99999; 
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 99999;
+        height: 100vh;
     }
-    .modal img{
-        width:90vw;
-        margin:0 2.5vw 2.5vw 2.5vw;
-    } 
-    .close{
-        width:100vw;
+    .modal img {
+        width: 90vw;
+        margin: 0 2.5vw 2.5vw 2.5vw;
+    }
+    .close {
+        width: 100vw;
         display: flex;
         justify-content: flex-end;
+    }
+    .modal-row {
+        flex-direction: column;
+    }
+    .modal-left {
+        font-size: small;
+        height: 40vh;
+        width:80%;
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .modal-right {
+        height: 60vh;
+    }
+    .modal embed{
+        height:45vh;
+        width:90vw;
     }
 }
