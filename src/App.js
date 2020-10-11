@@ -3,7 +3,7 @@ import Home from './Components/Landing/Landing'
 function App() {
   return (
     <div>
-    <Home/>
+      <Home />
     </div>
   );
 }
