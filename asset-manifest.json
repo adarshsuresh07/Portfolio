@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5c93569c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.d710ee7a.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.d710ee7a.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.2445a1df.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.2445a1df.js.map",
-    "static/js/2.495b1f01.chunk.js": "/Portfolio/static/js/2.495b1f01.chunk.js",
-    "static/js/2.495b1f01.chunk.js.map": "/Portfolio/static/js/2.495b1f01.chunk.js.map",
-    "index.html": "/Portfolio/index.html",
-    "precache-manifest.fac43bd7d17d5277447a25aacba7c2f4.js": "/Portfolio/precache-manifest.fac43bd7d17d5277447a25aacba7c2f4.js",
-    "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.5c93569c.chunk.css.map": "/Portfolio/static/css/main.5c93569c.chunk.css.map",
-    "static/js/2.495b1f01.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.495b1f01.chunk.js.LICENSE.txt",
-    "static/media/Certificate of adarsh.pdf": "/Portfolio/static/media/Certificate of adarsh.9febaf27.pdf",
-    "static/media/Pden.pdf": "/Portfolio/static/media/Pden.b295d570.pdf",
-    "static/media/delopus.png": "/Portfolio/static/media/delopus.b1096948.png",
-    "static/media/feepayment.png": "/Portfolio/static/media/feepayment.5acf4ccf.png",
-    "static/media/notified.png": "/Portfolio/static/media/notified.07b31181.png",
-    "static/media/pden.png": "/Portfolio/static/media/pden.66a8dce7.png"
+    "main.css": "/static/css/main.5c93569c.chunk.css",
+    "main.js": "/static/js/main.8eb73781.chunk.js",
+    "main.js.map": "/static/js/main.8eb73781.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eb07c764.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eb07c764.js.map",
+    "static/js/2.495b1f01.chunk.js": "/static/js/2.495b1f01.chunk.js",
+    "static/js/2.495b1f01.chunk.js.map": "/static/js/2.495b1f01.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.64af6a359f0c3e1523be84384cbf4f23.js": "/precache-manifest.64af6a359f0c3e1523be84384cbf4f23.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5c93569c.chunk.css.map": "/static/css/main.5c93569c.chunk.css.map",
+    "static/js/2.495b1f01.chunk.js.LICENSE.txt": "/static/js/2.495b1f01.chunk.js.LICENSE.txt",
+    "static/media/Certificate of adarsh.pdf": "/static/media/Certificate of adarsh.9febaf27.pdf",
+    "static/media/Pden.pdf": "/static/media/Pden.b295d570.pdf",
+    "static/media/delopus.png": "/static/media/delopus.b1096948.png",
+    "static/media/feepayment.png": "/static/media/feepayment.5acf4ccf.png",
+    "static/media/notified.png": "/static/media/notified.07b31181.png",
+    "static/media/pden.png": "/static/media/pden.66a8dce7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2445a1df.js",
+    "static/js/runtime-main.eb07c764.js",
     "static/js/2.495b1f01.chunk.js",
     "static/css/main.5c93569c.chunk.css",
-    "static/js/main.d710ee7a.chunk.js"
+    "static/js/main.8eb73781.chunk.js"
   ]
 }
